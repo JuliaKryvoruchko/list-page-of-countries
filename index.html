@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="header-block">
+            <h1 class="header">Where in the world?</h1>
+            <div class="container">
+                <label class="toggle_label">
+                    <input type="checkbox" id="mode" class="toggle">
+                    <span class="slider round">
+                        <img  alt="" class="moon">
+                        <img  alt="" class="sun">
+                    </span>
+                </label>
+                <p id="theme"></p>
+            </div>
+        </div>
+        <div class="filters">
+            <div class="search">
+                <input type="text" placeholder="Search for a country...." spellcheck="false" id="inputSearch"
+                    oninput="filter()">
+                <button><img src="img/search.png"></button>
+            </div>
+            <div class="select-block">
+                <select name="select" class="select" id="select" oninput="select()">
+                    <option value="" disabled selected hidden>Region</option>
+                </select>
+            </div>
+        </div>
+
+    </header>
+    <main>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
